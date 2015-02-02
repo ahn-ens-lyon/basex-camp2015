@@ -6,6 +6,16 @@ Programme de la semaine :
 - et en effet ce que dit Emmanuel, récupérer le mécanisme d'héritage et de surcharge...
 
 1) La multi-injection
+
+Basé sur la logique HTML5, mécanisme d'associer dans les attributs, les types de données et les fonctions à appeler.
+
+Ex: 
+data-model=tei
+data-function="listTitle"
+
+Exemple : dans webapp, on teste avec la fonction qui a trois paramètres ($options, $layout, $pattern) avec en templates/multi.xhtml 
+
+
 http://www.alsacreations.com/article/lire/1397-html5-attribut-data-dataset.html
 
 2) Réflexion sur l'organisation du dépot et des différentes branches :
