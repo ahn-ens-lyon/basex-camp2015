@@ -9,14 +9,16 @@ Programme de la semaine :
 
 Basé sur la logique HTML5, mécanisme d'associer dans les attributs, les types de données et les fonctions à appeler.
 
-Ex: 
+Ex: http://www.alsacreations.com/article/lire/1397-html5-attribut-data-dataset.html
 data-model=tei
 data-function="listTitle"
+data-pattern="table"
 
 Exemple : dans webapp, on teste avec la fonction qui a trois paramètres ($options, $layout, $pattern) avec en templates/multi.xhtml 
 
+En points d'entrée : blog/tei/articles
 
-http://www.alsacreations.com/article/lire/1397-html5-attribut-data-dataset.html
+Prévoir cas par défaut pour data-model (EAD ou TEI d'après)
 
 2) Réflexion sur l'organisation du dépot et des différentes branches :
 
