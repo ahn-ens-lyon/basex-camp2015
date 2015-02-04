@@ -20,3 +20,7 @@ b) article de revue : titre de la revue et le titre de l'article
 Les attributs de <monogr> et <analytic> sont suffisamments distincts pour préparer des affichages différents ou proposer une recherche détaillé selon les types bibliographiques.
 
 Pointe vers un index, forme normalisée des personnes
+
+Comment on sérialize avec Xquery, voir teiBiblio.xqm dans Models/
+
+Edition de "Punch", mime le fonctionnement d'une XSLT (template match) => function "dispatch"
