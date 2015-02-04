@@ -1,4 +1,4 @@
-Présentation du module Biblio (par Emmanuel et Philippe), pour gérer les ressources bibliographiques
+I. Présentation du module Biblio (par Emmanuel et Philippe), pour gérer les ressources bibliographiques
 
 Distinguer oeuvre des éditions (FRBR) :
 1)- Oeuvre (peut avoir plusieurs manifestations, ex: au cinéma, publication)
@@ -24,3 +24,49 @@ Pointe vers un index, forme normalisée des personnes
 Comment on sérialize avec Xquery, voir teiBiblio.xqm dans Models/
 
 Edition de "Punch", mime le fonctionnement d'une XSLT (template match) => function "dispatch"
+
+II. Mise à jour de vendredi et de master 
+
+Emmanuel avait forké sur le dépôt de Gazelle, et mis à jour son dépôt en faisant un "pull request", cela permet d'échanger sur les modifications avant validation.
+
+Philippe récupère la branche vendredi pour intégrer ses modifs localement
+
+$ git remote -v
+origin (fork de synopsx)
+origin
+upstream (pour garder un lien git remote add upstream ou un nom quelconque)
+
+D'abord mettre à jour upstream de AHN pour intégrer les modifs locales. 
+
+$ git fecth upstrem
+
+Cette procédure de filtrage en amont, évite d'avoir un historique un peu pourris. Master doit toujours être fonctionnel (peut-être versionné une v1, avec un historique vide, et démarrer une v2 avec notre code de cette semaine).
+
+$ git rebase -i upstream/vendredi (récupère mes modifs et mettre après ce qu'il y a sur la branche vendredi)
+
+Mode interactif qui permet de corriger les fautes, mettre en anglais, fusionner des commentaires (squash, add ...)
+
+On va écraser le vendredi local finalement qui n'apporte pas de modifications.
+
+$ git branch -D vendredi (enlever la branche avec les modifs locales)
+
+$ git checkout -b vendredi (pour repartir sur la branche vendredi du dépôt de Philippe, sans les modifs locales)
+
+$ git pull upstream
+
+$ git remote add gazelle https://github.com/gazelleinfinland/synopsx.git (ajout d'un remote)
+
+$ git fetch gazelle (pour indexer et récupérer toutes les branches)
+
+$ git branch config (création d'une nouvelle branche locale, à partir de vendredi qui est à jour)
+
+$ git co confi (se mettre sur la branche config)
+
+$ git merge gazelle/config (fast-forward, pas de conflits 
+
+
+
+
+
+
+
