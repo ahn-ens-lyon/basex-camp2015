@@ -11,5 +11,20 @@ Proposition 2 : quand on veut pouvoir créer une base, besoin de tester si fichi
 
 - Procédure d'installation à mettre en route !
 
+Trois options :
+1) Pas de projets, on livre synopsx (/ on redirige => /synopsx/home)
+2) Si un projet, prend l'entrée du dossier rest_xq (=> project/home
+3) si plusieurs projets, 
+
+<resourceName> correspond au début de l'URL
+
+Comment gère-t-on la racine ? Peut-être obligatoirement avoir "synopsx/"
+
+Les points d'entrée d'Emmanuel :
+- corpus/           listCorpus()
+- corpus/coprusId   corpus()
+- texts             listTexts()
+- blog              
 
 
+Tout ce qui gouverne BaseX dans le dossier SynopsX/restxq (installation) et on déporte tous les points d'entrées dans projects/
