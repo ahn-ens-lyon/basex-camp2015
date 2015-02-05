@@ -27,5 +27,6 @@ Les points d'entrée d'Emmanuel :
 - blog              
 
 
-Tout ce qui gouverne BaseX dans le dossier SynopsX/restxq (installation) et on déporte tous les points d'entrées dans projects/
-Préconiser 
+Tout ce qui gouverne BaseX dans le dossier SynopsX/restxq (installation) et on déporte tous les points d'entrées webapp.xqm dans projects/
+
+
