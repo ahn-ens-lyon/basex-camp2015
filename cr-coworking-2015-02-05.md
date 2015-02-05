@@ -28,3 +28,4 @@ Les points d'entrée d'Emmanuel :
 
 
 Tout ce qui gouverne BaseX dans le dossier SynopsX/restxq (installation) et on déporte tous les points d'entrées dans projects/
+Préconiser 
